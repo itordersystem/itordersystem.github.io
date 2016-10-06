@@ -1,10 +1,13 @@
 <title>ベータ版</title>
 # ITOS セルフオーダーシステム <br> アプリバージョンアップ<br>(テストバージョン用)
+
 <br><br><br>
+
+<p class="center">
 このページは
 <a href="http://www.it-ordersystem.jp/">ITOSアプリケーション</a>
 の**テスト用アプリ**をダウンロードするページです。<br>
-
+</p>
 <br><br>
 
 ## Beta version

@@ -1,5 +1,5 @@
 <title>ITOS Self 3</title>
-# I T O S  S e l f  3
+# ITOS S e l f 3
 <p class="center">
 ![iPad](https://itordersystem.github.io/itos/self3.png "iPad")
 </p>

@@ -16,7 +16,7 @@
 |---|---|---|
 | **ITOS mac** ( for mac )| | |
 | **ITOS スタッフ** ( for iPhone,iPod ) | |  |
-| **ITOS セルフ** ( for iPad ) | Ver.1.1.23 | [![download](https://itordersystem.github.io/itos/download.png   "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/self/ver_1_1_23/ITOS_SelfOrder3.plist "iPad用ITOSセルフ") |
+| **ITOS セルフ** ( for iPad ) | Ver.1.1.23 | [![download](https://itordersystem.github.io/itos/download.png   "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/self/ver_1_1_23/ITOS_SelfOrder_HD.plist "iPad用ITOSセルフ") |
 
 
 

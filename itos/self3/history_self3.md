@@ -3,6 +3,13 @@
 <p class="center">
 ![iPad](https://itordersystem.github.io/itos/self3.png "iPad")
 </p>
+```
+Ver.1.0以降のバージョン
+Ver.A.B.C
+A : メジャーバージョン
+B : マイナーバージョン(App Store にあげる時カウントアップ)
+C : マイナーバージョン(GitHubにあげる時カウントアップ、Bが上がる時にリセット)
+```
 ## history
 
 | version | date | content |

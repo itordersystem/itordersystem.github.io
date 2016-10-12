@@ -11,7 +11,7 @@
 					<key>kind</key>
 					<string>software-package</string>
 					<key>url</key>
-					<string>https://github.com/itordersystem/itordersystem.github.io/releases/download/untagged-8f6de7f762ca75d87c09/ITOSOrderTerm3.ipa</string>
+					<string>https://github-cloud.s3.amazonaws.com/releases/69846002/37dae6fc-90a0-11e6-9e9d-18860b2b1b0f.ipa?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAISTNZFOVBIJMK3TQ%2F20161012%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20161012T085150Z&X-Amz-Expires=300&X-Amz-Signature=33aab0cfae0c98838d1d53ff3001d2f408d553fbace472fca73391774b6078fb&X-Amz-SignedHeaders=host&actor_id=22585466&response-content-disposition=attachment%3B%20filename%3DITOSOrderTerm3.ipa&response-content-type=application%2Foctet-stream</string>
 				</dict>
 			</array>
 			<key>metadata</key>

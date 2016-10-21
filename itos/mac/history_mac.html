@@ -111,7 +111,7 @@
 .markdown-preview h3 { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
 .markdown-preview p, .markdown-preview table, .markdown-preview ul, .markdown-preview ol, .markdown-preview dl, .markdown-preview pre, .markdown-preview blockquote { margin-left: 25px; }
 .markdown-preview p ul, .markdown-preview table ul, .markdown-preview ul ul, .markdown-preview ol ul, .markdown-preview dl ul, .markdown-preview pre ul, .markdown-preview blockquote ul, .markdown-preview p ol, .markdown-preview table ol, .markdown-preview ul ol, .markdown-preview ol ol, .markdown-preview dl ol, .markdown-preview pre ol, .markdown-preview blockquote ol, .markdown-preview p dl, .markdown-preview table dl, .markdown-preview ul dl, .markdown-preview ol dl, .markdown-preview dl dl, .markdown-preview pre dl, .markdown-preview blockquote dl { margin-left: 0px; }
-.markdown-preview table { border-collapse: collapse; border-spacing: 0px; max-width: 800px; }
+.markdown-preview table { border-collapse: collapse; border-spacing: 0px; max-width: 850px; }
 .markdown-preview table th { text-align: center; border-color: rgb(102, 102, 102); background-color: rgb(238, 238, 238); }
 .markdown-preview table tr { border-top-color: rgb(102, 102, 102); }
 .markdown-preview table td { border-color: rgb(102, 102, 102); }
@@ -125,6 +125,9 @@
 
 .spell-check-misspelling .region {
   border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+}
+.spell-check-corrections {
+  width: 25em !important;
 }
 
 pre.editor-colors,
@@ -834,20 +837,6 @@ pre.editor-colors .bracket-matcher .region,
   font-style: normal;
 }
 </style>
-
-<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCPU09iGWKDK7tMy4fdLUevnZsoYzqv_hg",
-    authDomain: "itostest-6846f.firebaseapp.com",
-    databaseURL: "https://itostest-6846f.firebaseio.com",
-    storageBucket: "itostest-6846f.appspot.com",
-    messagingSenderId: "93644542536"
-  };
-  firebase.initializeApp(config);
-</script>
-
   </head>
   <body class='markdown-preview' data-use-github-style><p><title>ITOS Self 3</title></p>
 <h1 id="itos-mac">ITOS mac</h1>
@@ -865,9 +854,9 @@ pre.editor-colors .bracket-matcher .region,
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left">Ver.x.x.x</td>
-<td style="text-align:left">2016/10/XX</td>
-<td style="text-align:left">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</td>
+<td style="text-align:left">Ver.2.0.0α</td>
+<td style="text-align:left">2016/10/21</td>
+<td style="text-align:left">・Xcode8にてコンパイル<br>・取り急ぎコンパイル完状態で一旦リリース<br>・会計画面のカメラがコンパイルエラーになってしまうので一旦削除（<a href="./histimage/2_0_0_a_2.png">画像参照</a>）<br>・現状テーブル・担当者編集で固まる（<a href="./histimage/2_0_0_a_1.png">画像参照</a>） <br>・バージョンを2.0.0に<br></td>
 </tr>
 </tbody>
 </table></body>

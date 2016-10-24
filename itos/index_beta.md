@@ -15,7 +15,7 @@
 
 | Application | Version | download link |
 |:-----------|:------------|:------------:|
-| ![mac](https://itordersystem.github.io/itos/icon_mac.png "mac") **ITOS mac** ( for mac )|  | |
+| ![mac](https://itordersystem.github.io/itos/icon_mac.png "mac") **ITOS mac** ( for mac )| Ver.2.0.0α | [![download](https://itordersystem.github.io/itos/download.png "download")](htps://itordersystem.github.io/itos/mac/prerelease/ITOS.app.zip "ITOS mac") |
 | ![iPodiPhone](https://itordersystem.github.io/itos/icon_staff.png "iPodiPhone")  **ITOS スタッフ** ( for iPhone,iPod ) |  | |
 | ![iPodiPhone](https://itordersystem.github.io/itos/icon_staff.png "iPodiPhone")  **ITOS スタッフ(日本語)** ( for iPhone,iPod ) | | |
 | ![iPodiPhone](https://itordersystem.github.io/itos/icon_staff3.png "iPodiPhone")  **ITOS スタッフ 3** ( for iPhone,iPod ) | Ver.1.0.3 | [![download](https://itordersystem.github.io/itos/download.png "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/staff3/prerelease/ITOSOrderTerm3.plist "ITOS staff3") |

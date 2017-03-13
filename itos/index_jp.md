@@ -13,6 +13,6 @@
 
 | Application | Version | download |
 |---|---|---|
-| **ITOS mac** ( for mac )| Ver.1.5.16 | [![download](https://itordersystem.github.io/itos/download.png   "download")](https://itordersystem.github.io/itos/mac_jp/ver_1_5_16/ITOS.app.zip "mac") |
+| **ITOS mac** ( for mac )| Ver.1.5.17 | [![download](https://itordersystem.github.io/itos/download.png   "download")](https://itordersystem.github.io/itos/mac_jp/ver_1_5_17/ITOS.app.zip "mac") |
 | **ITOS スタッフ** ( for iPhone,iPod ) |  | |
 | **ITOS セルフ** ( for iPad ) | Ver.1.1.23 | [![download](https://itordersystem.github.io/itos/download.png   "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/self/ver_1_1_23/ITOS_SelfOrder_HD.plist "iPad用ITOSセルフ") |

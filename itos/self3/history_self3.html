@@ -101,15 +101,21 @@
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
-.markdown-preview { max-width: 900px; margin: 0px auto; padding: 25px; color: black; }
+.markdown-preview { font-family: helvetica, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif; font-weight: 200; max-width: 900px; margin: 0px auto; padding: 25px; color: black; }
 .markdown-preview hr { margin: 50px 0px; background-color: transparent; }
 .markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
 .markdown-preview hr.pb { break-after: page; }
 .markdown-preview hr.pb::after { display: none; }
-.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5 { font-weight: normal; border-color: rgb(102, 102, 102); }
-.markdown-preview h1 { font-size: 35px; border: none; margin: 30px auto; text-align: center; color: rgb(0, 85, 0); letter-spacing: 5px; }
-.markdown-preview h2 { font-size: 25px; letter-spacing: 3px; margin: 50px auto 25px; }
-.markdown-preview h3 { font-size: 18px; font-weight: bold; margin-bottom: 10px; }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-weight: normal; font-family: "Open sans", Arial, sans-serif; line-height: 1.2; letter-spacing: -0.5px; color: rgb(20, 20, 20); }
+.markdown-preview h1 { font-size: 35px !important; }
+.markdown-preview h2 { font-size: 25px !important; }
+.markdown-preview h3 { font-size: 23px !important; }
+.markdown-preview h4 { font-size: 20px !important; }
+.markdown-preview h5 { font-size: 19px !important; }
+.markdown-preview h6 { font-size: 18px; }
+.markdown-preview h1 { text-align: center; line-height: 1.1; font-family: Lato, "Noto sans CJK JP Light", "Hiragino sans", "Yu gothic light", YuGothic, "Open sans", Arial, sans-serif-light, sans-serif !important; font-weight: 300 !important; }
+.markdown-preview h2 { font-family: "Open sans", Arial, "Hiragino Kaku Gothic ProN", meiryo, sans-serif !important; font-weight: 200 !important; }
+.markdown-preview h3 { font-family: "Open sans", Arial, "Hiragino Kaku Gothic ProN", meiryo, sans-serif !important; font-weight: 200 !important; }
 .markdown-preview p, .markdown-preview table, .markdown-preview ul, .markdown-preview ol, .markdown-preview dl, .markdown-preview pre, .markdown-preview blockquote { margin-left: 25px; }
 .markdown-preview p ul, .markdown-preview table ul, .markdown-preview ul ul, .markdown-preview ol ul, .markdown-preview dl ul, .markdown-preview pre ul, .markdown-preview blockquote ul, .markdown-preview p ol, .markdown-preview table ol, .markdown-preview ul ol, .markdown-preview ol ol, .markdown-preview dl ol, .markdown-preview pre ol, .markdown-preview blockquote ol, .markdown-preview p dl, .markdown-preview table dl, .markdown-preview ul dl, .markdown-preview ol dl, .markdown-preview dl dl, .markdown-preview pre dl, .markdown-preview blockquote dl { margin-left: 0px; }
 .markdown-preview table { border-collapse: collapse; border-spacing: 0px; max-width: 850px; }
@@ -891,7 +897,7 @@ pre.editor-colors .bracket-matcher .region {
 <tr>
 <td style="text-align:left">Ver.1.1.1</td>
 <td style="text-align:left">2016/11/01</td>
-<td style="text-align:left">・いただいたボタンのリソース入れ替え<br> ・メニューのセルフ時数量入力不可設定時表示がお隠しなる場合があるのを修正<br>・会計画面の「お支払い」ボタンをとりあえず日本語環境で非表示<br> ・&lt;&lt;お試し&gt;&gt;注文リストがタイマーで勝手にヒョジされるのをボタン点滅で代替(半透明点滅バージョン)<br>　ご注文リストボタン(注文数に応じて点滅ON/OFF)（<a href="./histimage/1_1_1_1.gif">画像参照</a>）<br>　サムネイルでの注文ボタン点滅(注文数に関係なく点滅(暫定)（<a href="./histimage/1_1_1_2.gif">画像参照</a>）</td>
+<td style="text-align:left">・ボタンのリソース入れ替え<br> ・メニューのセルフ時数量入力不可設定時表示がお隠しなる場合があるのを修正<br>・会計画面の「お支払い」ボタンをとりあえず日本語環境で非表示<br> ・&lt;&lt;お試し&gt;&gt;注文リストがタイマーで勝手にヒョジされるのをボタン点滅で代替(半透明点滅バージョン)<br>　ご注文リストボタン(注文数に応じて点滅ON/OFF)（<a href="./histimage/1_1_1_1.gif">画像参照</a>）<br>　サムネイルでの注文ボタン点滅(注文数に関係なく点滅(暫定)（<a href="./histimage/1_1_1_2.gif">画像参照</a>）</td>
 </tr>
 <tr>
 <td style="text-align:left">Ver.1.1.2</td>
@@ -952,6 +958,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.1.4</td>
 <td style="text-align:left">2017/03/22</td>
 <td style="text-align:left">・App Store 登録</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.1.4.1</td>
+<td style="text-align:left">2017/07/14</td>
+<td style="text-align:left">・メニューでオプション項目非表示設定されたものを表示しないように修正</td>
 </tr>
 </tbody>
 </table></body>

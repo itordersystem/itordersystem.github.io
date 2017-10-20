@@ -106,11 +106,12 @@
 .markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
 .markdown-preview hr.pb { break-after: page; }
 .markdown-preview hr.pb::after { display: none; }
-.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-weight: normal; font-family: "Open sans", Arial, sans-serif; line-height: 1.2; letter-spacing: -0.5px; color: rgb(20, 20, 20); }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-weight: normal; font-family: "Open sans", Arial, sans-serif; letter-spacing: -0.5px; }
 .markdown-preview h1 { font-size: 35px !important; }
-.markdown-preview h2 { font-size: 25px !important; }
-.markdown-preview h3 { font-size: 23px !important; }
-.markdown-preview h4 { font-size: 20px !important; }
+.markdown-preview h2 { padding: 0.25em 0px 0.5em 0.75em; border-left: 6px solid rgb(204, 204, 204); border-bottom: 1px solid rgb(204, 204, 204); font-size: 23px !important; }
+.markdown-preview h3 { padding: 0.25em 0px 0.25em 0.75em; border-left: 6px solid rgb(204, 204, 204); font-size: 23px !important; }
+.markdown-preview h4 { position: relative; padding: 0px 0.5em 0.5em 1.7em; font-size: 20px !important; }
+.markdown-preview h4::after { position: absolute; top: 0.3em; left: 0.4em; z-index: 2; content: ""; width: 12px; height: 12px; background-color: rgb(204, 204, 204); transform: rotate(45deg); }
 .markdown-preview h5 { font-size: 19px !important; }
 .markdown-preview h6 { font-size: 18px; }
 .markdown-preview h1 { text-align: center; line-height: 1.1; font-family: Lato, "Noto sans CJK JP Light", "Hiragino sans", "Yu gothic light", YuGothic, "Open sans", Arial, sans-serif-light, sans-serif !important; font-weight: 300 !important; }
@@ -845,11 +846,11 @@ pre.editor-colors .bracket-matcher .region {
 </style>
   </head>
   <body class='markdown-preview' data-use-github-style><p><title>ITOS mac</title></p>
-<h1 id="i-t-o-s-mac">I T O S mac</h1>
-<p></p><p class="center">
-<img src="https://itordersystem.github.io/itos/mac.png" alt="mac" title="mac">
-</p><p></p>
-<h2 id="history">history</h2>
+<h1>I T O S mac</h1>
+<p class="center">
+<img title="mac" alt="mac" src="https://itordersystem.github.io/itos/mac.png">
+</p>
+
 <table>
 <thead>
 <tr>
@@ -1028,6 +1029,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.2.0.15(arc)</td>
 <td style="text-align:left">2017/10/05</td>
 <td style="text-align:left">・iPad用メニュー編集画面　オブジェクトリンク設定画面にリソース切り替えを追加（<a href="./histimage/2_0_15_1.png">画像参照</a>）</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.2.0.16(arc)</td>
+<td style="text-align:left">2017/10/20</td>
+<td style="text-align:left">・会計画面右上のマイナスボタンから商品の取り消しをした場合、取り消した商品のレシート印刷のON/OFF設定を追加（<a href="./histimage/2_0_16_1.png">画像参照</a>）（<a href="./histimage/2_0_16_2.png">画像参照</a>）</td>
 </tr>
 </tbody>
 </table></body>

@@ -3,7 +3,6 @@
 <p class="center">
 ![mac](https://itordersystem.github.io/itos/mac.png "mac")
 </p>
-## history
 
 | version | date | content |
 |:--|:--|:--|
@@ -41,3 +40,4 @@
 | Ver.2.0.13(arc) | 2017/09/01 | ・深夜料金対応 (サービス料金と共用) （<a href="./histimage/2_0_13_1.png">画像参照</a>）（<a href="./histimage/2_0_13_2.png">画像参照</a>）（<a href="./histimage/2_0_13_3.png">画像参照</a>）（<a href="./histimage/2_0_13_4.png">画像参照</a>） |
 | Ver.2.0.14(arc) | 2017/09/07 | ・深夜料金設定値　初期値対応（<a href="./histimage/2_0_14_1.png">画像参照</a>） |
 | Ver.2.0.15(arc) | 2017/10/05 | ・iPad用メニュー編集画面　オブジェクトリンク設定画面にリソース切り替えを追加（<a href="./histimage/2_0_15_1.png">画像参照</a>） |
+| Ver.2.0.16(arc) | 2017/10/20 | ・会計画面右上のマイナスボタンから商品の取り消しをした場合、取り消した商品のレシート印刷のON/OFF設定を追加（<a href="./histimage/2_0_16_1.png">画像参照</a>）（<a href="./histimage/2_0_16_2.png">画像参照</a>） |

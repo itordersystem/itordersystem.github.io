@@ -106,11 +106,12 @@
 .markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
 .markdown-preview hr.pb { break-after: page; }
 .markdown-preview hr.pb::after { display: none; }
-.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-weight: normal; font-family: "Open sans", Arial, sans-serif; line-height: 1.2; letter-spacing: -0.5px; color: rgb(20, 20, 20); }
+.markdown-preview h1, .markdown-preview h2, .markdown-preview h3, .markdown-preview h4, .markdown-preview h5, .markdown-preview h6 { font-weight: normal; font-family: "Open sans", Arial, sans-serif; letter-spacing: -0.5px; }
 .markdown-preview h1 { font-size: 35px !important; }
-.markdown-preview h2 { font-size: 25px !important; }
-.markdown-preview h3 { font-size: 23px !important; }
-.markdown-preview h4 { font-size: 20px !important; }
+.markdown-preview h2 { padding: 0.25em 0px 0.5em 0.75em; border-left: 6px solid rgb(204, 204, 204); border-bottom: 1px solid rgb(204, 204, 204); font-size: 23px !important; }
+.markdown-preview h3 { padding: 0.25em 0px 0.25em 0.75em; border-left: 6px solid rgb(204, 204, 204); font-size: 23px !important; }
+.markdown-preview h4 { position: relative; padding: 0px 0.5em 0.5em 1.7em; font-size: 20px !important; }
+.markdown-preview h4::after { position: absolute; top: 0.3em; left: 0.4em; z-index: 2; content: ""; width: 12px; height: 12px; background-color: rgb(204, 204, 204); transform: rotate(45deg); }
 .markdown-preview h5 { font-size: 19px !important; }
 .markdown-preview h6 { font-size: 18px; }
 .markdown-preview h1 { text-align: center; line-height: 1.1; font-family: Lato, "Noto sans CJK JP Light", "Hiragino sans", "Yu gothic light", YuGothic, "Open sans", Arial, sans-serif-light, sans-serif !important; font-weight: 300 !important; }
@@ -128,6 +129,9 @@
 .bracket-matcher .region {
   border-bottom: 1px dotted lime;
   position: absolute;
+}
+.line-number.bracket-matcher {
+  background-color: #777;
 }
 
 .spell-check-misspelling .region {
@@ -847,9 +851,9 @@ pre.editor-colors .bracket-matcher .region {
   <body class='markdown-preview' data-use-github-style><p><title>ITOS Self 3</title></p>
 <h1 id="itos-s-t-a-f-f-3">ITOS S t a f f  3</h1>
 <p></p><p class="center">
-<img src="https://itordersystem.github.io/itos/staff3.png" alt="iPad" title="iPad">
+<img title="iPad" alt="iPad" src="https://itordersystem.github.io/itos/staff3.png">
 </p><p></p>
-<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Ver.1.0以降のバージョン</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>Ver.A.B.C</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>A&nbsp;:&nbsp;メジャーバージョン</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>B&nbsp;:&nbsp;マイナーバージョン(App&nbsp;Store&nbsp;にあげる時カウントアップ)</span></span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text"><span>C&nbsp;:&nbsp;ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></span></div></pre><h2 id="history">history</h2>
+<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Ver.1.0以降のバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Ver.A.B.C</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>A&nbsp;:&nbsp;メジャーバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>B&nbsp;:&nbsp;マイナーバージョン(App&nbsp;Store&nbsp;にあげる時カウントアップ)</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>C&nbsp;:&nbsp;ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></div></pre><h2 id="history">history</h2>
 <table>
 <thead>
 <tr>
@@ -872,7 +876,7 @@ pre.editor-colors .bracket-matcher .region {
 <tr>
 <td style="text-align:left">Ver.0.0.3β</td>
 <td style="text-align:left">2016/05/06</td>
-<td style="text-align:left">・色変更<br>・起動時のアクティビティーインジケーター色変更<br>・商品選択画面の商品名<br>　フォント変更　<br>　文字数でフォントサイズ変更していたがフォントサイズは固定で収まりきらない<br>場合は末尾が &quot;...&quot;になるように修正<br>・追加入力画面<br>　フォント変更<br>　入力アイコン変更<br>・メニュー一覧<br>　フォント変更</td>
+<td style="text-align:left">・色変更<br>・起動時のアクティビティーインジケーター色変更<br>・商品選択画面の商品名<br>　フォント変更　<br>　文字数でフォントサイズ変更していたがフォントサイズは固定で収まりきらない<br>場合は末尾が "..."になるように修正<br>・追加入力画面<br>　フォント変更<br>　入力アイコン変更<br>・メニュー一覧<br>　フォント変更</td>
 </tr>
 <tr>
 <td style="text-align:left">Ver.0.0.4β</td>
@@ -953,6 +957,16 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.1.5.1</td>
 <td style="text-align:left">2017/09/20</td>
 <td style="text-align:left">・テーブル一覧画面からテーブルのロングプレスで伝票画面に遷移するように修正</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.1.6</td>
+<td style="text-align:left">2017/09/29</td>
+<td style="text-align:left">・App Store 登録</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.1.6.1</td>
+<td style="text-align:left">2016/12/01</td>
+<td style="text-align:left">・アリペイ支払いDEMO対応<br>　1. ITOS mac会計画面でアリペイ支払いボタンを押下<br>　2. 設定のアリペイ用QRコード読取からカメラ起動（<a href="./histimage/1_6_1_1.png">画像参照</a>）<br>　3. カメラをQRコードに合わせる（<a href="./histimage/1_6_1_2.png">画像参照</a>）</td>
 </tr>
 </tbody>
 </table></body>

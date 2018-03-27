@@ -37,4 +37,4 @@ C : ビルド(GitHubにあげる時カウントアップ、Bが上がる時に�
 | Ver.1.6 | 2017/09/29 |・App Store 登録 |
 | Ver.1.6.1 | 2018/02/09 |・アリペイ支払いDEMO対応<br>　1. ITOS mac会計画面でアリペイ支払いボタンを押下<br>　2. 設定のアリペイ用QRコード読取からカメラ起動（<a href="./histimage/1_6_1_1.png">画像参照</a>）<br>　3. カメラをQRコードに合わせる（<a href="./histimage/1_6_1_2.png">画像参照</a>）|
 | Ver.1.6.2 | 2018/03/15 |・メニューの商品タイトル表示を文字数に合わせてフォントサイズや行数を自動調整するように修正<br>（<a href="./histimage/1_6_2_1.png">画像参照</a>）（<a href="./histimage/1_6_2_2.png">画像参照</a>）（<a href="./histimage/1_6_2_3.png">画像参照</a>）|
-| Ver.1.6.3 | 2018/03/27 |・色設定を追加（設定１〜４）※要再起動（<a href="./histimage/1_6_3_1.png">画像参照</a>）（<a href="./histimage/1_6_3_2.png">画像参照</a>）<br>（<a href="./histimage/1_6_3_3.png">設定１</a>）（<a href="./histimage/1_6_3_4.png">設定２</a>）（<a href="./histimage/1_6_3_5.png">設定３</a>）（<a href="./histimage/1_6_3_6.png">設定４</a>）|
+| Ver.1.6.3 | 2018/03/27 |・注文画面オプション項目文字列を左詰めに変更<br>・色設定を追加（設定１〜４）※要再起動（<a href="./histimage/1_6_3_1.png">画像参照</a>）（<a href="./histimage/1_6_3_2.png">画像参照</a>）<br>（<a href="./histimage/1_6_3_3.png">設定１</a>）（<a href="./histimage/1_6_3_4.png">設定２</a>）（<a href="./histimage/1_6_3_5.png">設定３</a>）（<a href="./histimage/1_6_3_6.png">設定４</a>）|

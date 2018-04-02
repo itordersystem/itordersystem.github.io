@@ -40,3 +40,4 @@ C : ビルド(GitHubにあげる時カウントアップ、Bが上がる時に�
 | Ver.1.6.3 | 2018/03/27 |・注文画面オプション項目文字列を左詰めに変更<br>・色設定を追加（設定１〜４）※要再起動（<a href="./histimage/1_6_3_1.png">画像参照</a>）（<a href="./histimage/1_6_3_2.png">画像参照</a>）<br>（<a href="./histimage/1_6_3_3.png">茶系</a>）（<a href="./histimage/1_6_3_4.png">赤系</a>）（<a href="./histimage/1_6_3_5.png">青系</a>）（<a href="./histimage/1_6_3_6.png">緑系</a>）（<a href="./histimage/1_6_3_7.png">グレー系</a>）|
 | Ver.1.7 | 2018/03/29 |・App Store 登録 |
 | Ver.1.7.1 | 2018/04/02 |・店員呼び出し不具合対応 |
+| Ver.1.7.2 | 2018/04/02 |・テーブル移動不具合対応 |

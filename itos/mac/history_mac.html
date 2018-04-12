@@ -83,7 +83,7 @@
 .markdown-preview[data-use-github-style] span.float-left span { margin: 13px 0px 0px; }
 .markdown-preview[data-use-github-style] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
 .markdown-preview[data-use-github-style] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.0392157); border-radius: 3px; }
+.markdown-preview[data-use-github-style] code, .markdown-preview[data-use-github-style] tt { padding: 0.2em 0px; margin: 0px; font-size: 85%; background-color: rgba(0, 0, 0, 0.04); border-radius: 3px; }
 .markdown-preview[data-use-github-style] code::before, .markdown-preview[data-use-github-style] tt::before, .markdown-preview[data-use-github-style] code::after, .markdown-preview[data-use-github-style] tt::after { letter-spacing: -0.2em; content: " "; }
 .markdown-preview[data-use-github-style] code br, .markdown-preview[data-use-github-style] tt br { display: none; }
 .markdown-preview[data-use-github-style] del code { text-decoration: inherit; }
@@ -130,8 +130,9 @@
   border-bottom: 1px dotted lime;
   position: absolute;
 }
-.line-number.bracket-matcher {
-  background-color: #777;
+.line-number.bracket-matcher.bracket-matcher {
+  color: #002b36;
+  background-color: #dfd4b1;
 }
 
 .spell-check-misspelling .region {
@@ -150,7 +151,7 @@ pre.editor-colors .gutter {
   background-color: #eee8d5;
 }
 pre.editor-colors .gutter .line-number.cursor-line {
-  background-color: #e8e0c6;
+  background-color: #dfd4b1;
 }
 pre.editor-colors .invisible-character {
   color: #dcd0a9;
@@ -1101,6 +1102,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.2.0.25</td>
 <td style="text-align:left">2018/03/29</td>
 <td style="text-align:left">・ぴかいちナビ<br>　日計情報の「釣銭準備金」を入金処理の入金額に<br>　「翌日釣銭額」を「釣銭準備金」に<br>　時間別日計情報の内税合計を追加</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.2.0.26</td>
+<td style="text-align:left">2018/04/12</td>
+<td style="text-align:left">・テーブル情報ウインドウにテーブル対応プリンタ設定を追加（<a href="./histimage/2_0_25_1.png">画像参照</a>）<br>　テーブル対応プリンタが設定されているテーブルからの注文は全てその設定されているプリンタに出力される。設定されていないテーブルは従来通り。</td>
 </tr>
 </tbody>
 </table></body>

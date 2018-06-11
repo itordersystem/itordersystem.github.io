@@ -12,7 +12,7 @@
 
 export EDITOR=/usr/bin/vim  (最初の1度だけ入力)
 
-crontab -e で編集。以下を入力、保存。
+crontab -e で編集。以下を入力、保存。（vimエディタが立ち上がるのでvimエディタの知識が必要）
 
 ```
 */1  *  *  *  * if [ $(ps -ax |grep ITOS.app |grep -v grep |wc -l) -eq 0 ]; then open -a /Applications/ITOS.app ;fi

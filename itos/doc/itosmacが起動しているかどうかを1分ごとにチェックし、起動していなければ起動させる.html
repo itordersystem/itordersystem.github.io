@@ -875,7 +875,7 @@ pre.editor-colors .bracket-matcher .region {
 一度起動し、起動許可を与えておく。</p>
 <p>ターミナルを立ち上げる。</p>
 <p>export EDITOR=/usr/bin/vim  (最初の1度だけ入力)</p>
-<p>crontab -e で編集。以下を入力、保存。</p>
+<p>crontab -e で編集。以下を入力、保存。（vimエディタが立ち上がるのでvimエディタの知識が必要）</p>
 <pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>*/1&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;&nbsp;*&nbsp;if&nbsp;[&nbsp;$(ps&nbsp;-ax&nbsp;|grep&nbsp;ITOS.app&nbsp;|grep&nbsp;-v&nbsp;grep&nbsp;|wc&nbsp;-l)&nbsp;-eq&nbsp;0&nbsp;];&nbsp;then&nbsp;open&nbsp;-a&nbsp;/Applications/ITOS.app&nbsp;;fi</span></span></div></pre><p>crontab -l で今　動作しているcronを確認</p>
 <h2 id="-">チェックを解除</h2>
 <p>ターミナルを立ち上げる</p>

@@ -13,4 +13,4 @@
 
 | Application | Version | download |
 |---|---|---|
-| **ITOS mac** ( for mac )| Ver.1.5.33 | [![download](https://itordersystem.github.io/itos/download.png   "download")](https://itordersystem.github.io/itos/mac_jp/ver_1_5_34/ITOS.app.zip "mac") |
+| **ITOS mac** ( for mac )| Ver.1.5.34 | [![download](https://itordersystem.github.io/itos/download.png   "download")](https://itordersystem.github.io/itos/mac_jp/ver_1_5_34/ITOS.app.zip "mac") |

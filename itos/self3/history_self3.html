@@ -516,6 +516,9 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js.syntax--embedded .syntax--entity.syntax--name.syntax--tag {
   color: #268bd2;
 }
+.syntax--source.syntax--js .syntax--import .syntax--control {
+  color: #cb4b16;
+}
 .syntax--source.syntax--js.syntax--jsx .syntax--entity.syntax--name.syntax--tag {
   color: #268bd2;
 }
@@ -866,9 +869,21 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--scala .syntax--embedded .syntax--delimiters {
   font-style: normal;
 }
+.syntax--source.syntax--ts .syntax--import .syntax--control {
+  color: #cb4b16;
+}
+.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type {
+  color: #b58900;
+}
+.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class {
+  color: #b58900;
+}
+.syntax--source.syntax--ts .syntax--support.syntax--type {
+  color: #b58900;
+}
 </style>
   </head>
-  <body class='markdown-preview' data-use-github-style><p><title>ITOS Self 3</title></p>
+  <body class='markdown-preview' data-use-github-style><p>ITOS Self 3</p>
 <h1 id="itos-s-e-l-f-3">ITOS S e l f 3</h1>
 <p></p><p class="center">
 <img title="iPad" alt="iPad" src="https://itordersystem.github.io/itos/self3.png">
@@ -1046,6 +1061,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.1.6.3</td>
 <td style="text-align:left">2018/07/05</td>
 <td style="text-align:left">・アクセスガイド設定時の注文送信失敗での「再起動」選択を失敗が5回連続後に表示するよう修正<br>・設定や会計ボタンを表示する画面下部の矢印ボタンサイズ調整</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.1.6.4</td>
+<td style="text-align:left">2018/09/07</td>
+<td style="text-align:left">・注文失敗時のメッセージを変更<br>　アクセスガイド設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。OKを押して再度「送信」を押してください。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。もしくは「再起動」ボタンを押してアプリ起動後にもう一度送信してくだい。<br>　アクセスガイド未設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。<br>・コース変更時の画面遷移修正<br>・起動時のメニュー更新時にメニュー再表示されていなかったのを修正<br>・メニュー更新するたびにアプリのファイルサイズが大きくなっていたのを修正</td>
 </tr>
 </tbody>
 </table></body>

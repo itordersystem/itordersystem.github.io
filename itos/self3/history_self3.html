@@ -101,6 +101,7 @@
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview ul label { vertical-align: top; }
 .markdown-preview { font-family: helvetica, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif; font-weight: 200; max-width: 900px; margin: 0px auto; padding: 25px; color: black; }
 .markdown-preview hr { margin: 50px 0px; background-color: transparent; }
 .markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
@@ -888,7 +889,7 @@ pre.editor-colors .bracket-matcher .region {
 <p></p><p class="center">
 <img title="iPad" alt="iPad" src="https://itordersystem.github.io/itos/self3.png">
 </p><p></p>
-<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Ver.1.0以降のバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Ver.A.B.C</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>A&nbsp;:&nbsp;メジャーバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>B&nbsp;:&nbsp;マイナーバージョン(App&nbsp;Store&nbsp;にあげる時カウントアップ)</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>C&nbsp;:&nbsp;ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></div></pre><table>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Ver.1.0以降のバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Ver.A.B.C</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">A : メジャーバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">B : マイナーバージョン(App Store にあげる時カウントアップ)</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">C : ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></div></pre><table>
 <thead>
 <tr>
 <th style="text-align:left">version</th>
@@ -1066,6 +1067,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.1.6.4</td>
 <td style="text-align:left">2018/09/07</td>
 <td style="text-align:left">・注文失敗時のメッセージを変更<br>　アクセスガイド設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。OKを押して再度「送信」を押してください。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。もしくは「再起動」ボタンを押してアプリ起動後にもう一度送信してくだい。<br>　アクセスガイド未設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。<br>・コース変更時の画面遷移修正<br>・起動時のメニュー更新時にメニュー再表示されていなかったのを修正<br>・メニュー更新するたびにアプリのファイルサイズが大きくなっていたのを修正</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.1.6.5</td>
+<td style="text-align:left">2018/10/17</td>
+<td style="text-align:left">・コース変更時の画面更新中にインジケータを表示するよう修正</td>
 </tr>
 </tbody>
 </table></body>

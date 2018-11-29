@@ -12,7 +12,8 @@
 
 ## 会計画面でアリペイ決済を選択
 ![会計](https://itordersystem.github.io/itos/doc/itos_aripay/2.png "会計")<br>
-macに以下の画面が表示されている間に**staff3端末から**QRコードを読み取ってください。
+macに以下の画面が表示されている間に**staff3端末から**QRコードを読み取ってください。<br>
+手違いで違うQRコードを読み取ってしまった場合は**閉じるボタン**を押してやり直してください。
 ![会計](https://itordersystem.github.io/itos/doc/itos_aripay/3.png "会計")<br>
 
 ## QRコード読み取り

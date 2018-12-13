@@ -98,6 +98,7 @@
 .markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
 .markdown-preview[data-use-github-style] code { color: inherit; }
 .markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
@@ -163,6 +164,9 @@ pre.editor-colors .indent-guide {
 pre.editor-colors .cursor {
   border-color: #002b36;
 }
+pre.editor-colors .cursor-line {
+  background-color: #f7eed5;
+}
 pre.editor-colors .selection .region {
   background-color: #eee8d5;
 }
@@ -193,7 +197,8 @@ pre.editor-colors .bracket-matcher .region {
   color: #b58900;
 }
 .syntax--constant.syntax--character,
-.syntax--constant.syntax--other {
+.syntax--constant.syntax--other,
+.syntax--constant.syntax--support {
   color: #cb4b16;
 }
 .syntax--variable {
@@ -206,8 +211,9 @@ pre.editor-colors .bracket-matcher .region {
   color: #859900;
 }
 .syntax--entity.syntax--name.syntax--class,
-.syntax--entity.syntax--name.syntax--type,
-.syntax--entity.syntax--name.syntax--function {
+.syntax--entity.syntax--name.syntax--function,
+.syntax--entity.syntax--name.syntax--section,
+.syntax--entity.syntax--name.syntax--type {
   color: #268bd2;
 }
 .syntax--entity.syntax--other.syntax--attribute-name {
@@ -523,21 +529,27 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js.syntax--jsx .syntax--entity.syntax--name.syntax--tag {
   color: #268bd2;
 }
+.syntax--md .syntax--link .syntax--entity,
 .syntax--gfm .syntax--link .syntax--entity {
   color: #6c71c4;
 }
+.syntax--md .syntax--list.syntax--ordered,
 .syntax--gfm .syntax--list.syntax--ordered {
   color: #859900;
 }
+.syntax--md .syntax--list.syntax--unordered,
 .syntax--gfm .syntax--list.syntax--unordered {
   color: #b58900;
 }
+.syntax--md .syntax--raw,
 .syntax--gfm .syntax--raw {
   font-style: italic;
 }
+.syntax--md.syntax--support,
 .syntax--gfm.syntax--support {
   color: #93a1a1;
 }
+.syntax--md.syntax--support.syntax--quote,
 .syntax--gfm.syntax--support.syntax--quote {
   color: #6c71c4;
 }
@@ -870,16 +882,20 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--scala .syntax--embedded .syntax--delimiters {
   font-style: normal;
 }
-.syntax--source.syntax--ts .syntax--import .syntax--control {
+.syntax--source.syntax--ts .syntax--import .syntax--control,
+.syntax--source.syntax--tsx .syntax--import .syntax--control {
   color: #cb4b16;
 }
-.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type {
+.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type,
+.syntax--source.syntax--tsx .syntax--entity.syntax--name.syntax--type {
   color: #b58900;
 }
-.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class {
+.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class,
+.syntax--source.syntax--tsx .syntax--entity.syntax--inherited-class {
   color: #b58900;
 }
-.syntax--source.syntax--ts .syntax--support.syntax--type {
+.syntax--source.syntax--ts .syntax--support.syntax--type,
+.syntax--source.syntax--tsx .syntax--support.syntax--type {
   color: #b58900;
 }
 </style>
@@ -1168,6 +1184,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.2.0.33</td>
 <td style="text-align:left">2018/11/29</td>
 <td style="text-align:left">・アリペイ支払いお試し実装（<a href="./../doc/itos_aripay.html">詳細</a>）<br>　アリペイ設定追加(他の電子決済設定もここに追加予定)（<a href="./histimage/2_0_33_1.png">画像参照</a>）<br>　開発用の設定画面を追加（<a href="./histimage/2_0_33_2.png">画像参照</a>）（<a href="./histimage/2_0_33_3.png">画像参照</a>）</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.2.0.34</td>
+<td style="text-align:left">2018/12/13</td>
+<td style="text-align:left">・メニューの別名保存の時、エラーが発生していたのを修正<br>・メニューセット計算用消費税率設定の小数点処理設定をメニューのzipファイルに保存するよう修正<br>・お通しメニューの値段がslef3の伝票画面に反映されていないのを修正<br>・お通しメニューの値段が分析windowのABCメニュー分析に反映されていなかったのを修正 <br>・会計画面右上の商品を追加する＋ボタン押下が2回目以降おかしくなるのを修正</td>
 </tr>
 </tbody>
 </table></body>

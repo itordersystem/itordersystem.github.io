@@ -98,6 +98,7 @@
 .markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
 .markdown-preview[data-use-github-style] code { color: inherit; }
 .markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
@@ -163,6 +164,9 @@ pre.editor-colors .indent-guide {
 pre.editor-colors .cursor {
   border-color: #002b36;
 }
+pre.editor-colors .cursor-line {
+  background-color: #f7eed5;
+}
 pre.editor-colors .selection .region {
   background-color: #eee8d5;
 }
@@ -193,7 +197,8 @@ pre.editor-colors .bracket-matcher .region {
   color: #b58900;
 }
 .syntax--constant.syntax--character,
-.syntax--constant.syntax--other {
+.syntax--constant.syntax--other,
+.syntax--constant.syntax--support {
   color: #cb4b16;
 }
 .syntax--variable {
@@ -206,8 +211,9 @@ pre.editor-colors .bracket-matcher .region {
   color: #859900;
 }
 .syntax--entity.syntax--name.syntax--class,
-.syntax--entity.syntax--name.syntax--type,
-.syntax--entity.syntax--name.syntax--function {
+.syntax--entity.syntax--name.syntax--function,
+.syntax--entity.syntax--name.syntax--section,
+.syntax--entity.syntax--name.syntax--type {
   color: #268bd2;
 }
 .syntax--entity.syntax--other.syntax--attribute-name {
@@ -523,21 +529,27 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js.syntax--jsx .syntax--entity.syntax--name.syntax--tag {
   color: #268bd2;
 }
+.syntax--md .syntax--link .syntax--entity,
 .syntax--gfm .syntax--link .syntax--entity {
   color: #6c71c4;
 }
+.syntax--md .syntax--list.syntax--ordered,
 .syntax--gfm .syntax--list.syntax--ordered {
   color: #859900;
 }
+.syntax--md .syntax--list.syntax--unordered,
 .syntax--gfm .syntax--list.syntax--unordered {
   color: #b58900;
 }
+.syntax--md .syntax--raw,
 .syntax--gfm .syntax--raw {
   font-style: italic;
 }
+.syntax--md.syntax--support,
 .syntax--gfm.syntax--support {
   color: #93a1a1;
 }
+.syntax--md.syntax--support.syntax--quote,
 .syntax--gfm.syntax--support.syntax--quote {
   color: #6c71c4;
 }
@@ -870,42 +882,79 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--scala .syntax--embedded .syntax--delimiters {
   font-style: normal;
 }
-.syntax--source.syntax--ts .syntax--import .syntax--control {
+.syntax--source.syntax--ts .syntax--import .syntax--control,
+.syntax--source.syntax--tsx .syntax--import .syntax--control {
   color: #cb4b16;
 }
-.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type {
+.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type,
+.syntax--source.syntax--tsx .syntax--entity.syntax--name.syntax--type {
   color: #b58900;
 }
-.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class {
+.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class,
+.syntax--source.syntax--tsx .syntax--entity.syntax--inherited-class {
   color: #b58900;
 }
-.syntax--source.syntax--ts .syntax--support.syntax--type {
+.syntax--source.syntax--ts .syntax--support.syntax--type,
+.syntax--source.syntax--tsx .syntax--support.syntax--type {
   color: #b58900;
 }
 </style>
   </head>
   <body class='markdown-preview' data-use-github-style><h1 id="i-t-o-s-">I T O S アリペイ決済</h1>
-<p></p><div align="right">2018/11/29</div><br><br><p></p>
+<p></p><div align="right">2019/01/11</div><br><br><p></p>
 <h2 id="-">アリペイを設定する</h2>
-<p>　itos macの設定-&gt;その他
-<img title="設定" alt="設定" src="https://itordersystem.github.io/itos/doc/itos_aripay/1.png"><br>
- アリペイを使用するをON、<br>
- 端末識別情報、ログイン用パスワード、取り消し用パスワードは加盟店情報から入力してください。<br>
- 端末のユニークなIDは"0001"などの<strong>他の会計端末と被らないユニークなID</strong>を設定してください。macの故障などでパソコンが交換された場合、新しいmacに引き継ぎたいIDを入力してください。</p>
+<p>
+itos macの設定-&gt;その他
+</p>
+
+<p><img title="設定" alt="設定" src="https://itordersystem.github.io/itos/doc/itos_aripay/1.png"><br></p>
+<p>
+アリペイを使用するをON、<br>
+端末識別情報、ログイン用パスワード、取り消し用パスワードは加盟店情報から入力してください。<br>
+端末のユニークなIDは"0001"などの<strong>他の会計端末と被らないユニークなID</strong>を設定してください。macの故障などでパソコンが交換された場合、新しいmacに引き継ぎたいIDを入力してください。
+</p>
+
 <h2 id="-">会計画面でアリペイ決済を選択</h2>
-<p><img title="会計" alt="会計" src="https://itordersystem.github.io/itos/doc/itos_aripay/2.png"><br>
+<p><img title="会計" alt="会計" src="https://itordersystem.github.io/itos/doc/itos_aripay/2.png"><br></p>
+<p>
 macに以下の画面が表示されている間に<strong>staff3端末から</strong>QRコードを読み取ってください。<br>
 手違いで違うQRコードを読み取ってしまった場合は<strong>閉じるボタン</strong>を押してやり直してください。
-<img title="会計" alt="会計" src="https://itordersystem.github.io/itos/doc/itos_aripay/3.png"><br></p>
+</p>
+
+<p><img title="会計" alt="会計" src="https://itordersystem.github.io/itos/doc/itos_aripay/3.png"><br></p>
 <h2 id="qr-">QRコード読み取り</h2>
-<p>staff3端末の設定画面で<strong>アリペイ用QRコード読取</strong>を選択。</p>
+<p>
+staff3端末の設定画面で<strong>アリペイ用QRコード読取</strong>を選択。
+</p>
+
 <p><img title="QR" alt="QR" src="https://itordersystem.github.io/itos/doc/itos_aripay/4.png"><br><br><br></p>
-<p>カメラで<strong>お客様の端末に表示されているQRコード</strong>を写してください。</p>
+<p>
+カメラで<strong>お客様の端末に表示されているQRコード</strong>を写してください。
+</p>
+
 <p><img title="QR" alt="QR" src="https://itordersystem.github.io/itos/doc/itos_aripay/5.png"><br></p>
 <h2 id="-">決済する</h2>
-<p>QRコードの読み取りが完了すると決済可能になるので<strong>決済ボタン</strong>を押してください。</p>
+<p>
+QRコードの読み取りが完了すると決済可能になるので<strong>決済ボタン</strong>を押してください。
+</p>
+
 <p><img title="決済" alt="決済" src="https://itordersystem.github.io/itos/doc/itos_aripay/6.png"><br>
 <img title="決済" alt="決済" src="https://itordersystem.github.io/itos/doc/itos_aripay/7.png"><br></p>
-<p>お客様端末が支払いの際にパスワードが求められた場合などには以下の画面になります。<strong>パスワードの入力などの認証後にもう一度決済ボタン</strong>を押してください。</p>
-<p><img title="決済" alt="決済" src="https://itordersystem.github.io/itos/doc/itos_aripay/8.png"><br></p></body>
+<p>
+お客様端末が支払いの際にパスワードが求められた場合などには以下の画面になります。<strong>パスワードの入力などの認証後にもう一度決済ボタン</strong>を押してください。
+</p>
+
+<p><img title="決済" alt="決済" src="https://itordersystem.github.io/itos/doc/itos_aripay/8.png"><br></p>
+<h2 id="-">取り消し</h2>
+<p>
+アリペイ支払いを取り消し（返金）したい場合は、会計画面で通常と同じように取り消したいレシートを表示させ、取り消しボタンを押してください。
+</p>
+
+<p><img title="取り消し" alt="取り消し" src="https://itordersystem.github.io/itos/doc/itos_aripay/9.png"><br></p>
+<p>
+そのレシートがアリペイ支払いされたものであれば、アリペイ支払いを取り消してよいかどうかを尋ねる画面が表示されます。取り消したい場合は<strong>取消ボタン</strong>を押してください。
+</p>
+
+<p><img title="取り消し" alt="取り消し" src="https://itordersystem.github.io/itos/doc/itos_aripay/10.png"><br>
+<img title="取り消し" alt="取り消し" src="https://itordersystem.github.io/itos/doc/itos_aripay/11.png"><br></p></body>
 </html>

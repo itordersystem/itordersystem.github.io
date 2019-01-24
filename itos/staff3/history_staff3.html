@@ -98,9 +98,11 @@
 .markdown-preview[data-use-github-style] a { color: rgb(51, 122, 183); }
 .markdown-preview[data-use-github-style] code { color: inherit; }
 .markdown-preview[data-use-github-style] pre.editor-colors { padding: 0.8em 1em; margin-bottom: 1em; font-size: 0.85em; border-radius: 4px; overflow: auto; }
+.markdown-preview pre.editor-colors { user-select: auto; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
 .markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview ul label { vertical-align: top; }
 .markdown-preview { font-family: helvetica, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif; font-weight: 200; max-width: 900px; margin: 0px auto; padding: 25px; color: black; }
 .markdown-preview hr { margin: 50px 0px; background-color: transparent; }
 .markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
@@ -162,6 +164,9 @@ pre.editor-colors .indent-guide {
 pre.editor-colors .cursor {
   border-color: #002b36;
 }
+pre.editor-colors .cursor-line {
+  background-color: rgba(243, 200, 84, 0.15);
+}
 pre.editor-colors .selection .region {
   background-color: #eee8d5;
 }
@@ -192,7 +197,8 @@ pre.editor-colors .bracket-matcher .region {
   color: #b58900;
 }
 .syntax--constant.syntax--character,
-.syntax--constant.syntax--other {
+.syntax--constant.syntax--other,
+.syntax--constant.syntax--support {
   color: #cb4b16;
 }
 .syntax--variable {
@@ -204,9 +210,13 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--storage {
   color: #859900;
 }
+.syntax--meta.syntax--class {
+  color: #268bd2;
+}
 .syntax--entity.syntax--name.syntax--class,
-.syntax--entity.syntax--name.syntax--type,
-.syntax--entity.syntax--name.syntax--function {
+.syntax--entity.syntax--name.syntax--function,
+.syntax--entity.syntax--name.syntax--section,
+.syntax--entity.syntax--name.syntax--type {
   color: #268bd2;
 }
 .syntax--entity.syntax--other.syntax--attribute-name {
@@ -428,9 +438,6 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--java .syntax--punctuation.syntax--definition.syntax--method-parameters {
   color: #586e75;
 }
-.syntax--source.syntax--js .syntax--constant {
-  color: #859900;
-}
 .syntax--source.syntax--js .syntax--comma {
   color: #657b83;
 }
@@ -443,6 +450,15 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js .syntax--entity.syntax--name {
   color: #657b83;
 }
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--function {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--tag {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--other.syntax--attribute-name {
+  color: #b58900;
+}
 .syntax--source.syntax--js .syntax--meta.syntax--brace {
   color: #657b83;
 }
@@ -453,7 +469,7 @@ pre.editor-colors .bracket-matcher .region {
   color: #859900;
 }
 .syntax--source.syntax--js .syntax--keyword.syntax--control {
-  color: #859900;
+  color: #cb4b16;
 }
 .syntax--source.syntax--js .syntax--keyword.syntax--control.syntax--regexp {
   color: #2aa198;
@@ -485,11 +501,8 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js .syntax--support.syntax--constant {
   color: #657b83;
 }
-.syntax--source.syntax--js .syntax--storage {
-  color: #268bd2;
-}
-.syntax--source.syntax--js .syntax--constant.syntax--numeric {
-  color: #657b83;
+.syntax--source.syntax--js .syntax--storage.syntax--modifier {
+  color: #b58900;
 }
 .syntax--source.syntax--js .syntax--punctuation.syntax--terminator.syntax--statement {
   color: #657b83;
@@ -501,10 +514,6 @@ pre.editor-colors .bracket-matcher .region {
   color: #268bd2;
 }
 .syntax--source.syntax--js .syntax--meta.syntax--brace.syntax--curly {
-  color: #268bd2;
-}
-.syntax--source.syntax--js .syntax--definition.syntax--begin.syntax--curly,
-.syntax--source.syntax--js .syntax--definition.syntax--end.syntax--curly {
   color: #268bd2;
 }
 .syntax--source.syntax--js .syntax--string.syntax--quoted.syntax--template .syntax--embedded.syntax--source {
@@ -519,24 +528,33 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js .syntax--import .syntax--control {
   color: #cb4b16;
 }
-.syntax--source.syntax--js.syntax--jsx .syntax--entity.syntax--name.syntax--tag {
+.syntax--source.syntax--js.syntax--rails .syntax--instance {
   color: #268bd2;
 }
+.syntax--source.syntax--js.syntax--rails .syntax--class {
+  color: #b58900;
+}
+.syntax--md .syntax--link .syntax--entity,
 .syntax--gfm .syntax--link .syntax--entity {
   color: #6c71c4;
 }
+.syntax--md .syntax--list.syntax--ordered,
 .syntax--gfm .syntax--list.syntax--ordered {
   color: #859900;
 }
+.syntax--md .syntax--list.syntax--unordered,
 .syntax--gfm .syntax--list.syntax--unordered {
   color: #b58900;
 }
+.syntax--md .syntax--raw,
 .syntax--gfm .syntax--raw {
   font-style: italic;
 }
+.syntax--md.syntax--support,
 .syntax--gfm.syntax--support {
   color: #93a1a1;
 }
+.syntax--md.syntax--support.syntax--quote,
 .syntax--gfm.syntax--support.syntax--quote {
   color: #6c71c4;
 }
@@ -869,16 +887,20 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--scala .syntax--embedded .syntax--delimiters {
   font-style: normal;
 }
-.syntax--source.syntax--ts .syntax--import .syntax--control {
+.syntax--source.syntax--ts .syntax--import .syntax--control,
+.syntax--source.syntax--tsx .syntax--import .syntax--control {
   color: #cb4b16;
 }
-.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type {
+.syntax--source.syntax--ts .syntax--entity.syntax--name.syntax--type,
+.syntax--source.syntax--tsx .syntax--entity.syntax--name.syntax--type {
   color: #b58900;
 }
-.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class {
+.syntax--source.syntax--ts .syntax--entity.syntax--inherited-class,
+.syntax--source.syntax--tsx .syntax--entity.syntax--inherited-class {
   color: #b58900;
 }
-.syntax--source.syntax--ts .syntax--support.syntax--type {
+.syntax--source.syntax--ts .syntax--support.syntax--type,
+.syntax--source.syntax--tsx .syntax--support.syntax--type {
   color: #b58900;
 }
 </style>
@@ -888,7 +910,7 @@ pre.editor-colors .bracket-matcher .region {
 <p></p><p class="center">
 <img title="iPad" alt="iPad" src="https://itordersystem.github.io/itos/staff3.png">
 </p><p></p>
-<pre class="editor-colors lang-"><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Ver.1.0以降のバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>Ver.A.B.C</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>A&nbsp;:&nbsp;メジャーバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>B&nbsp;:&nbsp;マイナーバージョン(App&nbsp;Store&nbsp;にあげる時カウントアップ)</span></span></div><div class="line"><span class="syntax--text syntax--plain syntax--null-grammar"><span>C&nbsp;:&nbsp;ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></div></pre><h2 id="history">history</h2>
+<pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Ver.1.0以降のバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Ver.A.B.C</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">A : メジャーバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">B : マイナーバージョン(App Store にあげる時カウントアップ)</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">C : ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></div></pre><h2 id="history">history</h2>
 <table>
 <thead>
 <tr>
@@ -1057,6 +1079,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.1.9</td>
 <td style="text-align:left">2018/09/12</td>
 <td style="text-align:left">・App Store 登録</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.1.9.1</td>
+<td style="text-align:left">2019/01/24</td>
+<td style="text-align:left">・QRコード読み取り画面への遷移方法を変更（<a href="./histimage/1_9_1.png">画像参照</a>）（<a href="./histimage/1_9_2.png">画像参照</a>）</td>
 </tr>
 </tbody>
 </table></body>

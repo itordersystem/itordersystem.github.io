@@ -1,4 +1,4 @@
-<title>i t o s セルフオーダーシステム</title>
+
 # ITOS セルフオーダーシステム <br> アプリダウンロード<br>
 
 <br><br><br>

@@ -165,7 +165,7 @@ pre.editor-colors .cursor {
   border-color: #002b36;
 }
 pre.editor-colors .cursor-line {
-  background-color: #f7eed5;
+  background-color: rgba(243, 200, 84, 0.15);
 }
 pre.editor-colors .selection .region {
   background-color: #eee8d5;
@@ -209,6 +209,9 @@ pre.editor-colors .bracket-matcher .region {
 }
 .syntax--storage {
   color: #859900;
+}
+.syntax--meta.syntax--class {
+  color: #268bd2;
 }
 .syntax--entity.syntax--name.syntax--class,
 .syntax--entity.syntax--name.syntax--function,
@@ -435,9 +438,6 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--java .syntax--punctuation.syntax--definition.syntax--method-parameters {
   color: #586e75;
 }
-.syntax--source.syntax--js .syntax--constant {
-  color: #859900;
-}
 .syntax--source.syntax--js .syntax--comma {
   color: #657b83;
 }
@@ -450,6 +450,15 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js .syntax--entity.syntax--name {
   color: #657b83;
 }
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--function {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--name.syntax--tag {
+  color: #268bd2;
+}
+.syntax--source.syntax--js .syntax--entity.syntax--other.syntax--attribute-name {
+  color: #b58900;
+}
 .syntax--source.syntax--js .syntax--meta.syntax--brace {
   color: #657b83;
 }
@@ -460,7 +469,7 @@ pre.editor-colors .bracket-matcher .region {
   color: #859900;
 }
 .syntax--source.syntax--js .syntax--keyword.syntax--control {
-  color: #859900;
+  color: #cb4b16;
 }
 .syntax--source.syntax--js .syntax--keyword.syntax--control.syntax--regexp {
   color: #2aa198;
@@ -492,11 +501,8 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js .syntax--support.syntax--constant {
   color: #657b83;
 }
-.syntax--source.syntax--js .syntax--storage {
-  color: #268bd2;
-}
-.syntax--source.syntax--js .syntax--constant.syntax--numeric {
-  color: #657b83;
+.syntax--source.syntax--js .syntax--storage.syntax--modifier {
+  color: #b58900;
 }
 .syntax--source.syntax--js .syntax--punctuation.syntax--terminator.syntax--statement {
   color: #657b83;
@@ -508,10 +514,6 @@ pre.editor-colors .bracket-matcher .region {
   color: #268bd2;
 }
 .syntax--source.syntax--js .syntax--meta.syntax--brace.syntax--curly {
-  color: #268bd2;
-}
-.syntax--source.syntax--js .syntax--definition.syntax--begin.syntax--curly,
-.syntax--source.syntax--js .syntax--definition.syntax--end.syntax--curly {
   color: #268bd2;
 }
 .syntax--source.syntax--js .syntax--string.syntax--quoted.syntax--template .syntax--embedded.syntax--source {
@@ -526,8 +528,11 @@ pre.editor-colors .bracket-matcher .region {
 .syntax--source.syntax--js .syntax--import .syntax--control {
   color: #cb4b16;
 }
-.syntax--source.syntax--js.syntax--jsx .syntax--entity.syntax--name.syntax--tag {
+.syntax--source.syntax--js.syntax--rails .syntax--instance {
   color: #268bd2;
+}
+.syntax--source.syntax--js.syntax--rails .syntax--class {
+  color: #b58900;
 }
 .syntax--md .syntax--link .syntax--entity,
 .syntax--gfm .syntax--link .syntax--entity {
@@ -1194,6 +1199,11 @@ pre.editor-colors .bracket-matcher .region {
 <td style="text-align:left">Ver.2.0.35</td>
 <td style="text-align:left">2019/01/11</td>
 <td style="text-align:left">・アリペイ支払いお試し実装(取り消し処理追加)（<a href="./../doc/itos_aripay.html">詳細</a>）</td>
+</tr>
+<tr>
+<td style="text-align:left">Ver.2.1</td>
+<td style="text-align:left">2019/02/07</td>
+<td style="text-align:left">・アリペイの文言、アイコンをUnivaPayに変更<br>・UnivaPay支払いのレシート発行時に、サーバからの応答のserviceIDでアリペイ、ウィチャット、d払いを区別して印刷するように変更(テストサーバでの支払いでは試せない模様)<br>・アプリ起動中にsleepにならないようにする設定が古いapiのせいで効かなくなっていたのを修正</td>
 </tr>
 </tbody>
 </table></body>

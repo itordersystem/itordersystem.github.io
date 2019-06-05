@@ -24,6 +24,6 @@
 | ![iPodiPhone](https://itordersystem.github.io/itos/icon_staff3.png "iPodiPhone")  **ITOS スタッフ 3** ( for iPhone,iPod ) | Ver.1.8.3 (とり八本店様 用) | [![download](https://itordersystem.github.io/itos/download.png "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/staff3/prerelease/for_torihachi/ITOSOrderTerm3.plist "ITOS staff3") |
 | ![iPad](https://itordersystem.github.io/itos/icon_self.png "iPad") **ITOS セルフ** ( for iPad ) | | |
 | ![iPad](https://itordersystem.github.io/itos/icon_self.png "iPad") **ITOS セルフ(日本語)** ( for iPad ) | | |
-| ![iPad](https://itordersystem.github.io/itos/icon_self3.png "iPad") **ITOS セルフ 3** ( for iPad ) | Ver.1.7.7 | [![download](https://itordersystem.github.io/itos/download.png "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/self3/prerelease/manifest.plist "ITOS sefl3") |
+| ![iPad](https://itordersystem.github.io/itos/icon_self3.png "iPad") **ITOS セルフ 3** ( for iPad ) | Ver.1.8.0.1 | [![download](https://itordersystem.github.io/itos/download.png "download")](itms-services://?action=download-manifest&url=https://itordersystem.github.io/itos/self3/prerelease/manifest.plist "ITOS sefl3") |
 
 <br>

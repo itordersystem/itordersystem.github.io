@@ -1,8 +1,10 @@
-<title>ITOS mac</title>
+
 # I T O S mac
-<p class="center">
-![mac](https://itordersystem.github.io/itos/mac.png "mac")
-</p>
+
+<div align="center">
+<img src="https://itordersystem.github.io/itos/mac.png" alt="mac" title="mac">
+</div>
+
 
 | version | date | content |
 |:--|:--|:--|

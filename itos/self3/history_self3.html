@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html>
-  <head>
-      <meta charset="utf-8" />
-      <title>history_self3</title>
-      <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(101, 123, 131); background-color: rgb(253, 246, 227); overflow: auto; }
+      <!DOCTYPE html>
+      <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>history_self3</title>
+            <style>.markdown-preview:not([data-use-github-style]) { padding: 2em; font-size: 1.2em; color: rgb(101, 123, 131); background-color: rgb(253, 246, 227); overflow: auto; }
 .markdown-preview:not([data-use-github-style]) > :first-child { margin-top: 0px; }
 .markdown-preview:not([data-use-github-style]) h1, .markdown-preview:not([data-use-github-style]) h2, .markdown-preview:not([data-use-github-style]) h3, .markdown-preview:not([data-use-github-style]) h4, .markdown-preview:not([data-use-github-style]) h5, .markdown-preview:not([data-use-github-style]) h6 { line-height: 1.2; margin-top: 1.5em; margin-bottom: 0.5em; color: rgb(30, 36, 39); }
 .markdown-preview:not([data-use-github-style]) h1 { font-size: 2.4em; font-weight: 300; }
@@ -101,8 +101,8 @@
 .markdown-preview pre.editor-colors { user-select: auto; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors .horizontal-scrollbar { visibility: hidden; }
 .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .vertical-scrollbar, .scrollbars-visible-always .markdown-preview pre.editor-colors:hover .horizontal-scrollbar { visibility: visible; }
-.markdown-preview .task-list-item-checkbox { position: absolute; margin: 0.25em 0px 0px -1.4em; }
-.markdown-preview ul label { vertical-align: top; }
+.markdown-preview .task-list-item input[type="checkbox"] { position: absolute; margin: 0.25em 0px 0px -1.4em; }
+.markdown-preview .task-list-item { list-style-type: none; }
 .markdown-preview { font-family: helvetica, arial, "hiragino kaku gothic pro", meiryo, "ms pgothic", sans-serif; font-weight: 200; max-width: 900px; margin: 0px auto; padding: 25px; color: black; }
 .markdown-preview hr { margin: 50px 0px; background-color: transparent; }
 .markdown-preview hr::after { content: ""; display: block; border-top-style: ridge; }
@@ -904,271 +904,274 @@ pre.editor-colors .bracket-matcher .region {
   color: #b58900;
 }
 </style>
-  </head>
-  <body class='markdown-preview' data-use-github-style><h1 id="itos-s-e-l-f-3">ITOS S e l f 3</h1>
+        </head>
+        <body class='markdown-preview' data-use-github-style><h1 id="itos-s-e-l-f-3">ITOS S e l f 3</h1>
 <p class="center">
-<img title="iPad" alt="iPad" src="https://itordersystem.github.io/itos/self3.png">
+![iPad](https://itordersystem.github.io/itos/self3.png "iPad")
 </p>
 
 <pre class="editor-colors lang-text"><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Ver.1.0以降のバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">Ver.A.B.C</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">A : メジャーバージョン</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">B : マイナーバージョン(App Store にあげる時カウントアップ)</span></span></div><div class="line"><span class="syntax--text syntax--plain"><span class="syntax--meta syntax--paragraph syntax--text">C : ビルド(GitHubにあげる時カウントアップ、Bが上がる時にリセット)</span></span></div></pre><table>
 <thead>
 <tr>
-<th style="text-align:left">version</th>
-<th style="text-align:left">date</th>
-<th style="text-align:left">content</th>
+<th align="left">version</th>
+<th align="left">date</th>
+<th align="left">content</th>
 </tr>
 </thead>
-<tbody>
-<tr>
-<td style="text-align:left">Ver.0.0.1α</td>
-<td style="text-align:left">2016/09/16</td>
-<td style="text-align:left">・とりあえず現状のアップロード<br>　設定画面での画面のズレ残っています</td>
+<tbody><tr>
+<td align="left">Ver.0.0.1α</td>
+<td align="left">2016/09/16</td>
+<td align="left">・とりあえず現状のアップロード<br>　設定画面での画面のズレ残っています</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.0.0.1α2</td>
-<td style="text-align:left">2016/09/21</td>
-<td style="text-align:left">・アプリアイコン変更<br>・注文リスト　変更ボタン押下対応<br>・注文リスト　「閉じる」ボタンを変更<br>・デモメニュー　「１つずつの注文になります」表示不具合対応</td>
+<td align="left">Ver.0.0.1α2</td>
+<td align="left">2016/09/21</td>
+<td align="left">・アプリアイコン変更<br>・注文リスト　変更ボタン押下対応<br>・注文リスト　「閉じる」ボタンを変更<br>・デモメニュー　「１つずつの注文になります」表示不具合対応</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.0.0.1β</td>
-<td style="text-align:left">2016/09/29</td>
-<td style="text-align:left">・各設定画面　表示ズレ対応<br>・YouTube動画再生改善<br>・設定のアイコンをアプリアイコンに変更<br>・パスワード入力画面調整<br>・payボタンの日本語版お支払いボタン追加<br>・Xcode8（最新）にてコンパイル</td>
+<td align="left">Ver.0.0.1β</td>
+<td align="left">2016/09/29</td>
+<td align="left">・各設定画面　表示ズレ対応<br>・YouTube動画再生改善<br>・設定のアイコンをアプリアイコンに変更<br>・パスワード入力画面調整<br>・payボタンの日本語版お支払いボタン追加<br>・Xcode8（最新）にてコンパイル</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.0.0.2β</td>
-<td style="text-align:left">2016/10/06</td>
-<td style="text-align:left">・アプリ起動画面追加<br>・webページ表示終了で異常終了することがあったのを修正</td>
+<td align="left">Ver.0.0.2β</td>
+<td align="left">2016/10/06</td>
+<td align="left">・アプリ起動画面追加<br>・webページ表示終了で異常終了することがあったのを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.0</td>
-<td style="text-align:left">2016/10/08</td>
-<td style="text-align:left">・App Store 登録</td>
+<td align="left">Ver.1.0</td>
+<td align="left">2016/10/08</td>
+<td align="left">・App Store 登録</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.0.1</td>
-<td style="text-align:left">2016/10/20</td>
-<td style="text-align:left">・注文確認メッセージを省略する設定を追加 （<a href="./histimage/1_0_1.png">画像参照</a>）<br>・ITOS macのiPad編集画面で登録された価格を¥に、税抜きなどの表記を削除<br> ・画面右上の「ご注文リスト(数字)」の数字が取り消しや送信で更新されていなかったのを修正</td>
+<td align="left">Ver.1.0.1</td>
+<td align="left">2016/10/20</td>
+<td align="left">・注文確認メッセージを省略する設定を追加 （<a href="./histimage/1_0_1.png">画像参照</a>）<br>・ITOS macのiPad編集画面で登録された価格を¥に、税抜きなどの表記を削除<br> ・画面右上の「ご注文リスト(数字)」の数字が取り消しや送信で更新されていなかったのを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.1</td>
-<td style="text-align:left">2016/10/28</td>
-<td style="text-align:left">・App Store 登録</td>
+<td align="left">Ver.1.1</td>
+<td align="left">2016/10/28</td>
+<td align="left">・App Store 登録</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.1.1</td>
-<td style="text-align:left">2016/11/01</td>
-<td style="text-align:left">・ボタンのリソース入れ替え<br> ・メニューのセルフ時数量入力不可設定時表示がお隠しなる場合があるのを修正<br>・会計画面の「お支払い」ボタンをとりあえず日本語環境で非表示<br> ・&lt;&lt;お試し&gt;&gt;注文リストがタイマーで勝手にヒョジされるのをボタン点滅で代替(半透明点滅バージョン)<br>　ご注文リストボタン(注文数に応じて点滅ON/OFF)（<a href="./histimage/1_1_1_1.gif">画像参照</a>）<br>　サムネイルでの注文ボタン点滅(注文数に関係なく点滅(暫定)（<a href="./histimage/1_1_1_2.gif">画像参照</a>）</td>
+<td align="left">Ver.1.1.1</td>
+<td align="left">2016/11/01</td>
+<td align="left">・ボタンのリソース入れ替え<br> ・メニューのセルフ時数量入力不可設定時表示がお隠しなる場合があるのを修正<br>・会計画面の「お支払い」ボタンをとりあえず日本語環境で非表示<br> ・&lt;&lt;お試し&gt;&gt;注文リストがタイマーで勝手にヒョジされるのをボタン点滅で代替(半透明点滅バージョン)<br>　ご注文リストボタン(注文数に応じて点滅ON/OFF)（<a href="./histimage/1_1_1_1.gif">画像参照</a>）<br>　サムネイルでの注文ボタン点滅(注文数に関係なく点滅(暫定)（<a href="./histimage/1_1_1_2.gif">画像参照</a>）</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.1.2</td>
-<td style="text-align:left">2016/11/11</td>
-<td style="text-align:left">・呼び出しボタン画像修正<br>・設定画面に移動後にメニュー画面に戻った時の画面ずれを修正<br>・注文リストボタン点滅（<a href="./histimage/1_1_2_1.gif">画像参照</a>）<br>・サムネイル注文ボタン点滅（<a href="./histimage/1_1_2_2.gif">画像参照</a>）</td>
+<td align="left">Ver.1.1.2</td>
+<td align="left">2016/11/11</td>
+<td align="left">・呼び出しボタン画像修正<br>・設定画面に移動後にメニュー画面に戻った時の画面ずれを修正<br>・注文リストボタン点滅（<a href="./histimage/1_1_2_1.gif">画像参照</a>）<br>・サムネイル注文ボタン点滅（<a href="./histimage/1_1_2_2.gif">画像参照</a>）</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.1.3</td>
-<td style="text-align:left">2016/11/18</td>
-<td style="text-align:left">・コース名表示修正<br>・呼び出しボタンを呼び出し中点滅表示に変更<br>・オーダー数入力画面の値段表示、画像を読み込んでいたのをコードで色設定するように修正（<a href="./histimage/1_1_3_1.png">画像参照</a>）<br>・注文リスト自動表示修正<br>　注文後すぐ表示、30秒後注文が入っていれば表示<br>　　↓<br>　注文後すぐは表示しない。<strong>無操作</strong>が約30秒発生した時注文が入っていれば表示</td>
+<td align="left">Ver.1.1.3</td>
+<td align="left">2016/11/18</td>
+<td align="left">・コース名表示修正<br>・呼び出しボタンを呼び出し中点滅表示に変更<br>・オーダー数入力画面の値段表示、画像を読み込んでいたのをコードで色設定するように修正（<a href="./histimage/1_1_3_1.png">画像参照</a>）<br>・注文リスト自動表示修正<br>　注文後すぐ表示、30秒後注文が入っていれば表示<br>　　↓<br>　注文後すぐは表示しない。<strong>無操作</strong>が約30秒発生した時注文が入っていれば表示</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2</td>
-<td style="text-align:left">2016/11/18</td>
-<td style="text-align:left">・App Store 登録<br> ・サムネイル送信ボタン、呼び出しボタンのアニメーションが会計画面に遷移した時おかしくなっていたのを修正</td>
+<td align="left">Ver.1.2</td>
+<td align="left">2016/11/18</td>
+<td align="left">・App Store 登録<br> ・サムネイル送信ボタン、呼び出しボタンのアニメーションが会計画面に遷移した時おかしくなっていたのを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2.1</td>
-<td style="text-align:left">2016/12/08</td>
-<td style="text-align:left">・呼び出しボタン変更<br>　・イメージ変更<br>　・ツールバーの呼び出しボタンを「店員呼出」に変更<br>　・会計画面の呼び出しボタンを「会計呼出」に変更<br>　<strong>※ staff3, macも対応版が必要</strong></td>
+<td align="left">Ver.1.2.1</td>
+<td align="left">2016/12/08</td>
+<td align="left">・呼び出しボタン変更<br>　・イメージ変更<br>　・ツールバーの呼び出しボタンを「店員呼出」に変更<br>　・会計画面の呼び出しボタンを「会計呼出」に変更<br>　<strong>※ staff3, macも対応版が必要</strong></td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2.2</td>
-<td style="text-align:left">2016/12/14</td>
-<td style="text-align:left">・会計画面の会計呼び出しボタン位置変更<br>・伝票画面に会計呼び出しボタン追加</td>
+<td align="left">Ver.1.2.2</td>
+<td align="left">2016/12/14</td>
+<td align="left">・会計画面の会計呼び出しボタン位置変更<br>・伝票画面に会計呼び出しボタン追加</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2.3</td>
-<td style="text-align:left">2016/12/15</td>
-<td style="text-align:left">・「店員呼出」「会計呼出」「呼出中」ボタンリソース入れ替え<br>・サムネイル形式送信ボタンが必須項目未選択のメニュー選択エラー発生後のキャンセルで点滅していたのを修正</td>
+<td align="left">Ver.1.2.3</td>
+<td align="left">2016/12/15</td>
+<td align="left">・「店員呼出」「会計呼出」「呼出中」ボタンリソース入れ替え<br>・サムネイル形式送信ボタンが必須項目未選択のメニュー選択エラー発生後のキャンセルで点滅していたのを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2.4</td>
-<td style="text-align:left">2016/12/20</td>
-<td style="text-align:left">・「会計確認」「ご注文内容」ボタンリソース入れ替え<br>・人数入力画面変更（<a href="./histimage/1_2_4_1.png">画像参照</a>）<br>　デフォルトの人数を0人に<br>　0人入力時はmacに人数を送信しない<br>　「C」ボタン押下時入力を0クリア</td>
+<td align="left">Ver.1.2.4</td>
+<td align="left">2016/12/20</td>
+<td align="left">・「会計確認」「ご注文内容」ボタンリソース入れ替え<br>・人数入力画面変更（<a href="./histimage/1_2_4_1.png">画像参照</a>）<br>　デフォルトの人数を0人に<br>　0人入力時はmacに人数を送信しない<br>　「C」ボタン押下時入力を0クリア</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2.5</td>
-<td style="text-align:left">2017/01/06</td>
-<td style="text-align:left">・設定-&gt;メニュー情報取得 で　<strong>アクセスガイド設定時</strong>はアプリを終了するように変更</td>
+<td align="left">Ver.1.2.5</td>
+<td align="left">2017/01/06</td>
+<td align="left">・設定-&gt;メニュー情報取得 で　<strong>アクセスガイド設定時</strong>はアプリを終了するように変更</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.2.6</td>
-<td style="text-align:left">2017/01/11</td>
-<td style="text-align:left">・<strong>アクセスガイド設定時</strong>、設定画面遷移時のパスワード入力で<strong>"re"</strong>と入力するとアプリを終了するように変更</td>
+<td align="left">Ver.1.2.6</td>
+<td align="left">2017/01/11</td>
+<td align="left">・<strong>アクセスガイド設定時</strong>、設定画面遷移時のパスワード入力で<strong>"re"</strong>と入力するとアプリを終了するように変更</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.3</td>
-<td style="text-align:left">2017/01/13</td>
-<td style="text-align:left">・App Store 登録</td>
+<td align="left">Ver.1.3</td>
+<td align="left">2017/01/13</td>
+<td align="left">・App Store 登録</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.3.1</td>
-<td style="text-align:left">2017/03/21</td>
-<td style="text-align:left">・注文リスト自動表示時間設定対応<br>　※設定されていないメニューについては従来通り30秒後に自動表示<br>・英語版会計確認ボタン入れ替え<br>・英語版会計画面の喰い逃げ防止メッセージ表示がずれていたのを修正<br>・設定-&gt; テーブル選択内画面 英語画面対応、レイアウト修正（<a href="./histimage/1_3_1.png">画像参照</a>）</td>
+<td align="left">Ver.1.3.1</td>
+<td align="left">2017/03/21</td>
+<td align="left">・注文リスト自動表示時間設定対応<br>　※設定されていないメニューについては従来通り30秒後に自動表示<br>・英語版会計確認ボタン入れ替え<br>・英語版会計画面の喰い逃げ防止メッセージ表示がずれていたのを修正<br>・設定-&gt; テーブル選択内画面 英語画面対応、レイアウト修正（<a href="./histimage/1_3_1.png">画像参照</a>）</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.4</td>
-<td style="text-align:left">2017/03/22</td>
-<td style="text-align:left">・App Store 登録</td>
+<td align="left">Ver.1.4</td>
+<td align="left">2017/03/22</td>
+<td align="left">・App Store 登録</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.4.1</td>
-<td style="text-align:left">2017/07/14</td>
-<td style="text-align:left">・メニューでオプション項目非表示設定されたものを表示しないように修正</td>
+<td align="left">Ver.1.4.1</td>
+<td align="left">2017/07/14</td>
+<td align="left">・メニューでオプション項目非表示設定されたものを表示しないように修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5</td>
-<td style="text-align:left">2017/07/14</td>
-<td style="text-align:left">・App Store 登録</td>
+<td align="left">Ver.1.5</td>
+<td align="left">2017/07/14</td>
+<td align="left">・App Store 登録</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.1</td>
-<td style="text-align:left">2017/09/14</td>
-<td style="text-align:left">・メモリ管理方式をMRCからARCへ変更<br>・画面下部のタブを表示させる画像を入れ替え、アニメーション追加<br>・言語切り替え<strong>お試し対応</strong><br>　※デモページの日本語・英語（ページ属性）に対応させています<br>　※一部リソースのみ対応</td>
+<td align="left">Ver.1.5.1</td>
+<td align="left">2017/09/14</td>
+<td align="left">・メモリ管理方式をMRCからARCへ変更<br>・画面下部のタブを表示させる画像を入れ替え、アニメーション追加<br>・言語切り替え<strong>お試し対応</strong><br>　※デモページの日本語・英語（ページ属性）に対応させています<br>　※一部リソースのみ対応</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.2</td>
-<td style="text-align:left">2017/10/05</td>
-<td style="text-align:left">・多言語化対応<br>　macのメニュー作成で表示言語切り替えボタンを作成し、そのボタン押下によりリソースを切り返ます。起動時はOSの言語設定に従います。<br>・オーダーリストのボタンで画像を使わないように変更</td>
+<td align="left">Ver.1.5.2</td>
+<td align="left">2017/10/05</td>
+<td align="left">・多言語化対応<br>　macのメニュー作成で表示言語切り替えボタンを作成し、そのボタン押下によりリソースを切り返ます。起動時はOSの言語設定に従います。<br>・オーダーリストのボタンで画像を使わないように変更</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.3</td>
-<td style="text-align:left">2018/01/26</td>
-<td style="text-align:left">・注文画面「設定2」を追加（<a href="./histimage/1_5_3_1.png">画像参照</a>）（<a href="./histimage/1_5_3_2.png">画像参照</a>）<br>・メニューに設定された最低注文数対応<br>・背景色設定のデフォルトを白に変更</td>
+<td align="left">Ver.1.5.3</td>
+<td align="left">2018/01/26</td>
+<td align="left">・注文画面「設定2」を追加（<a href="./histimage/1_5_3_1.png">画像参照</a>）（<a href="./histimage/1_5_3_2.png">画像参照</a>）<br>・メニューに設定された最低注文数対応<br>・背景色設定のデフォルトを白に変更</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.4</td>
-<td style="text-align:left">2018/02/15</td>
-<td style="text-align:left">・注文画面「設定3」を追加（<a href="./histimage/1_5_4_1.png">画像参照</a>）</td>
+<td align="left">Ver.1.5.4</td>
+<td align="left">2018/02/15</td>
+<td align="left">・注文画面「設定3」を追加（<a href="./histimage/1_5_4_1.png">画像参照</a>）</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.5</td>
-<td style="text-align:left">2018/02/19</td>
-<td style="text-align:left">・デモ用メニューを入れ替え<br>・AdHoc対象機種を追加</td>
+<td align="left">Ver.1.5.5</td>
+<td align="left">2018/02/19</td>
+<td align="left">・デモ用メニューを入れ替え<br>・AdHoc対象機種を追加</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.6</td>
-<td style="text-align:left">2018/03/01</td>
-<td style="text-align:left">・iPad注文画面デフォルト設定時の画面ずれ修正<br>・注文画面が開いた時、macから注文可能の応答があるまで「注文リストへ登録」色を薄くするよう修正<br>・アルコール購入警告画面、客数入力画面を画面リニューアル、<br>　画面遷移方法変更(アプリ起動時、会計後表示対応)（<a href="./histimage/1_5_6_1.png">画像参照</a>）（<a href="./histimage/1_5_6_2.png">画像参照</a>）</td>
+<td align="left">Ver.1.5.6</td>
+<td align="left">2018/03/01</td>
+<td align="left">・iPad注文画面デフォルト設定時の画面ずれ修正<br>・注文画面が開いた時、macから注文可能の応答があるまで「注文リストへ登録」色を薄くするよう修正<br>・アルコール購入警告画面、客数入力画面を画面リニューアル、<br>　画面遷移方法変更(アプリ起動時、会計後表示対応)（<a href="./histimage/1_5_6_1.png">画像参照</a>）（<a href="./histimage/1_5_6_2.png">画像参照</a>）</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.5.7</td>
-<td style="text-align:left">2018/03/07</td>
-<td style="text-align:left">・客数入力画面で「０」の場合macにデータを送信せずに画面終了するよう修正<br>・画面右下の矢印タップで表示される画面下部のバーにて、バー以外の画面タップ、メニュースクロールで非表示になるよう修正</td>
+<td align="left">Ver.1.5.7</td>
+<td align="left">2018/03/07</td>
+<td align="left">・客数入力画面で「０」の場合macにデータを送信せずに画面終了するよう修正<br>・画面右下の矢印タップで表示される画面下部のバーにて、バー以外の画面タップ、メニュースクロールで非表示になるよう修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6</td>
-<td style="text-align:left">2018/03/20</td>
-<td style="text-align:left">・デフォルト設定値をいくつか修正<br>・App Store 登録</td>
+<td align="left">Ver.1.6</td>
+<td align="left">2018/03/20</td>
+<td align="left">・デフォルト設定値をいくつか修正<br>・App Store 登録</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.1</td>
-<td style="text-align:left">2018/04/09</td>
-<td style="text-align:left">・アルコール警告の選択結果が逆になていた不具合を修正</td>
+<td align="left">Ver.1.6.1</td>
+<td align="left">2018/04/09</td>
+<td align="left">・アルコール警告の選択結果が逆になていた不具合を修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.2</td>
-<td style="text-align:left">2018/06/21</td>
-<td style="text-align:left">・Xcode9(iOS11 SDK)にてコンパイル<br>・画面下部のバーが操作を受け付けなくなったので作り直し（<a href="./histimage/1_6_2_1.png">画像参照</a>）（<a href="./histimage/1_6_2_2.png">画像参照</a>）<br>・不要な一部設定項目を削除<br>　担当者選択を使う　   削除<br>　メッセージ表示　      設定の画面表示を消しておいてソースは残す<br>　色設定　 削除<br>　画面の回転を行う　　削除<br>　テーブルセルの高さ　削除<br>　デザイン画面を使う　削除　　常にON<br>・不要と思われる一部ソースを削除<br>・アクセスガイド設定時に限り、注文送信失敗した時に「再起動」が選択できるように変更（<a href="./histimage/1_6_2_3.png">画像参照</a>）（<a href="./histimage/1_6_2_4.png">画像参照</a>）<br>※現状メニュー更新後の再描画が動作しておりません。調査中です。</td>
+<td align="left">Ver.1.6.2</td>
+<td align="left">2018/06/21</td>
+<td align="left">・Xcode9(iOS11 SDK)にてコンパイル<br>・画面下部のバーが操作を受け付けなくなったので作り直し（<a href="./histimage/1_6_2_1.png">画像参照</a>）（<a href="./histimage/1_6_2_2.png">画像参照</a>）<br>・不要な一部設定項目を削除<br>　担当者選択を使う　   削除<br>　メッセージ表示　      設定の画面表示を消しておいてソースは残す<br>　色設定　 削除<br>　画面の回転を行う　　削除<br>　テーブルセルの高さ　削除<br>　デザイン画面を使う　削除　　常にON<br>・不要と思われる一部ソースを削除<br>・アクセスガイド設定時に限り、注文送信失敗した時に「再起動」が選択できるように変更（<a href="./histimage/1_6_2_3.png">画像参照</a>）（<a href="./histimage/1_6_2_4.png">画像参照</a>）<br>※現状メニュー更新後の再描画が動作しておりません。調査中です。</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.3</td>
-<td style="text-align:left">2018/07/05</td>
-<td style="text-align:left">・アクセスガイド設定時の注文送信失敗での「再起動」選択を失敗が5回連続後に表示するよう修正<br>・設定や会計ボタンを表示する画面下部の矢印ボタンサイズ調整</td>
+<td align="left">Ver.1.6.3</td>
+<td align="left">2018/07/05</td>
+<td align="left">・アクセスガイド設定時の注文送信失敗での「再起動」選択を失敗が5回連続後に表示するよう修正<br>・設定や会計ボタンを表示する画面下部の矢印ボタンサイズ調整</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.4</td>
-<td style="text-align:left">2018/09/07</td>
-<td style="text-align:left">・注文失敗時のメッセージを変更<br>　アクセスガイド設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。OKを押して再度「送信」を押してください。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。もしくは「再起動」ボタンを押してアプリ起動後にもう一度送信してくだい。<br>　アクセスガイド未設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。<br>・コース変更時の画面遷移修正<br>・起動時のメニュー更新時にメニュー再表示されていなかったのを修正<br>・メニュー更新するたびにアプリのファイルサイズが大きくなっていたのを修正</td>
+<td align="left">Ver.1.6.4</td>
+<td align="left">2018/09/07</td>
+<td align="left">・注文失敗時のメッセージを変更<br>　アクセスガイド設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。OKを押して再度「送信」を押してください。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。もしくは「再起動」ボタンを押してアプリ起動後にもう一度送信してくだい。<br>　アクセスガイド未設定時<br>　オーダー送信失敗１回目-２回目 --&gt; 申し訳ありません。オーダーの送信に失敗しました。<br>　オーダー送信失敗３回目以降 --&gt; 申し訳ありません。オーダーの送信に失敗しました。店員にお知らせください。<br>・コース変更時の画面遷移修正<br>・起動時のメニュー更新時にメニュー再表示されていなかったのを修正<br>・メニュー更新するたびにアプリのファイルサイズが大きくなっていたのを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.5</td>
-<td style="text-align:left">2018/10/17</td>
-<td style="text-align:left">・コース変更時の画面更新中にインジケータを表示するよう修正</td>
+<td align="left">Ver.1.6.5</td>
+<td align="left">2018/10/17</td>
+<td align="left">・コース変更時の画面更新中にインジケータを表示するよう修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.6</td>
-<td style="text-align:left">2018/10/24</td>
-<td style="text-align:left">・macでの会計終了時にページ初期化が行われていなかったのを修正</td>
+<td align="left">Ver.1.6.6</td>
+<td align="left">2018/10/24</td>
+<td align="left">・macでの会計終了時にページ初期化が行われていなかったのを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.7</td>
-<td style="text-align:left">2018/10/31</td>
-<td style="text-align:left">・macでの会計終了時にアルコール警告・テーブル人数入力画面が表示されない時があったのを対応。また、会計画面表示中はメニューに戻るよう修正</td>
+<td align="left">Ver.1.6.7</td>
+<td align="left">2018/10/31</td>
+<td align="left">・macでの会計終了時にアルコール警告・テーブル人数入力画面が表示されない時があったのを対応。また、会計画面表示中はメニューに戻るよう修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.8</td>
-<td style="text-align:left">2018/11/06</td>
-<td style="text-align:left">・設定の「伝票画面を使う」ONで伝票画面が表示されていなかったのを修正<br>・サムネイルリスト形式でテーブル番号表示するよう修正<br>・画面のスワイプでの戻る処理を禁止するよう修正<br>・設定-&gt;テーブル番号設定の「トップ画面に表示」は常にONで使用していないので設定をを消去</td>
+<td align="left">Ver.1.6.8</td>
+<td align="left">2018/11/06</td>
+<td align="left">・設定の「伝票画面を使う」ONで伝票画面が表示されていなかったのを修正<br>・サムネイルリスト形式でテーブル番号表示するよう修正<br>・画面のスワイプでの戻る処理を禁止するよう修正<br>・設定-&gt;テーブル番号設定の「トップ画面に表示」は常にONで使用していないので設定をを消去</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.9</td>
-<td style="text-align:left">2018/11/07</td>
-<td style="text-align:left">・サムネイル形式の時、会計・伝票画面遷移時にテーブル番号表示がずれていたのを修正<br>・伝票画面で一部アイコン表示がおかしくなる場合があるのを修正<br>・伝票画面のレイアウトを見直し、修正（<a href="./histimage/1_6_9_1.png">画像参照</a>）<br>・伝票画面からの商品評価ページへの遷移していたのを削除</td>
+<td align="left">Ver.1.6.9</td>
+<td align="left">2018/11/07</td>
+<td align="left">・サムネイル形式の時、会計・伝票画面遷移時にテーブル番号表示がずれていたのを修正<br>・伝票画面で一部アイコン表示がおかしくなる場合があるのを修正<br>・伝票画面のレイアウトを見直し、修正（<a href="./histimage/1_6_9_1.png">画像参照</a>）<br>・伝票画面からの商品評価ページへの遷移していたのを削除</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.6.10</td>
-<td style="text-align:left">2018/11/12</td>
-<td style="text-align:left">・テーブル変更後、テーブル番号表示が更新されていないパターンを修正</td>
+<td align="left">Ver.1.6.10</td>
+<td align="left">2018/11/12</td>
+<td align="left">・テーブル変更後、テーブル番号表示が更新されていないパターンを修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7</td>
-<td style="text-align:left">2018/11/22</td>
-<td style="text-align:left">・App Store 登録 <br>・プライバシーポリシー表示を追加</td>
+<td align="left">Ver.1.7</td>
+<td align="left">2018/11/22</td>
+<td align="left">・App Store 登録 <br>・プライバシーポリシー表示を追加</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.1</td>
-<td style="text-align:left">2019/03/07</td>
-<td style="text-align:left">・xcode10でコンパイル<br>・多言語化対応（未完成）<br>　料理名、オプション、選択項目、ボタン一部 多言語対応<br>　注文画面のコメント スクロール対応<br>　メニューの料理名表示がタイトルだったがiPadでの表示名に変更</td>
+<td align="left">Ver.1.7.1</td>
+<td align="left">2019/03/07</td>
+<td align="left">・xcode10でコンパイル<br>・多言語化対応（未完成）<br>　料理名、オプション、選択項目、ボタン一部 多言語対応<br>　注文画面のコメント スクロール対応<br>　メニューの料理名表示がタイトルだったがiPadでの表示名に変更</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.2</td>
-<td style="text-align:left">2019/03/25</td>
-<td style="text-align:left">・画面右下の矢印アイコンを変更<br>・多言語化対応<br>　会計画面・割り勘画面対応<br>　その他ボタン対応</td>
+<td align="left">Ver.1.7.2</td>
+<td align="left">2019/03/25</td>
+<td align="left">・画面右下の矢印アイコンを変更<br>・多言語化対応<br>　会計画面・割り勘画面対応<br>　その他ボタン対応</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.3</td>
-<td style="text-align:left">2019/04/04</td>
-<td style="text-align:left">・多言語化対応<br>　ページ言語設定されていないメニューの時、ボタン類はiOSの言語設定に従い、メニュー名やオプションに関しては日本語設定を表示するように変更</td>
+<td align="left">Ver.1.7.3</td>
+<td align="left">2019/04/04</td>
+<td align="left">・多言語化対応<br>　ページ言語設定されていないメニューの時、ボタン類はiOSの言語設定に従い、メニュー名やオプションに関しては日本語設定を表示するように変更</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.4</td>
-<td style="text-align:left">2019/04/22</td>
-<td style="text-align:left">・多言語化対応<br>　注文画面の選択ボタンを変更<br>　注文の配膳状況表示対応<br>　会計画面お支払いボタン対応<br>・リソース整理<br>・ページ属性個数増加に対応</td>
+<td align="left">Ver.1.7.4</td>
+<td align="left">2019/04/22</td>
+<td align="left">・多言語化対応<br>　注文画面の選択ボタンを変更<br>　注文の配膳状況表示対応<br>　会計画面お支払いボタン対応<br>・リソース整理<br>・ページ属性個数増加に対応</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.5</td>
-<td style="text-align:left">2019/05/15</td>
-<td style="text-align:left">・個数制限時でも注文後の個数変更で変更できてしまうのを修正<br>・AdHoc対象機種を追加</td>
+<td align="left">Ver.1.7.5</td>
+<td align="left">2019/05/15</td>
+<td align="left">・個数制限時でも注文後の個数変更で変更できてしまうのを修正<br>・AdHoc対象機種を追加</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.6</td>
-<td style="text-align:left">2019/05/21</td>
-<td style="text-align:left">・中国語文言入れ替え</td>
+<td align="left">Ver.1.7.6</td>
+<td align="left">2019/05/21</td>
+<td align="left">・中国語文言入れ替え</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.7.7</td>
-<td style="text-align:left">2019/05/29</td>
-<td style="text-align:left">・伝票確認画面の言語切替対応<br>・メニュー設定の「起動時ページ属性」がすべて設定されていないときは 全てのページを表示するように修正</td>
+<td align="left">Ver.1.7.7</td>
+<td align="left">2019/05/29</td>
+<td align="left">・伝票確認画面の言語切替対応<br>・メニュー設定の「起動時ページ属性」がすべて設定されていないときは 全てのページを表示するように修正</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.8</td>
-<td style="text-align:left">2019/05/31</td>
-<td style="text-align:left">・App Store 登録<br>・お支払いボタン表示／非表示設定を追加</td>
+<td align="left">Ver.1.8</td>
+<td align="left">2019/05/31</td>
+<td align="left">・App Store 登録<br>・お支払いボタン表示／非表示設定を追加</td>
 </tr>
 <tr>
-<td style="text-align:left">Ver.1.8.0.1</td>
-<td style="text-align:left">2019/06/05</td>
-<td style="text-align:left">・App Store 登録<br>・会計画面のオプション表示修正</td>
+<td align="left">Ver.1.8.0.1</td>
+<td align="left">2019/06/05</td>
+<td align="left">・App Store 登録<br>・会計画面のオプション表示修正</td>
 </tr>
-</tbody>
-</table></body>
-</html>
+<tr>
+<td align="left">Ver.1.8.1</td>
+<td align="left">2019/07/05</td>
+<td align="left">・数量選択画面の動画再生に使用していたUIWevViewが最新iOSで再生されなくなったため、WKWebViewに変更<br>・会計表示ボタンの文言を「会計」-&gt;「会計確認」に変更</td>
+</tr>
+</tbody></table></body>
+      </html>

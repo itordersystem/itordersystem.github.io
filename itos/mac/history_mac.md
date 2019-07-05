@@ -74,3 +74,4 @@
 | Ver.2.1.7 | 2019/06/14 | ・FOOD GENESIS 21連携 (m_bumon.csv, m_bunseki.csv追加)|
 | Ver.2.1.8 | 2019/06/19 | ・FOOD GENESIS 21連携 ftpアップロード追加（<a href="./histimage/2_1_8_1.png">画像参照</a>）<br>・ユニバペイ支払いレシート印刷にpaypay追加|
 | Ver.2.1.9 | 2019/06/26 | ・FOOD GENESIS 21連携 (r_tori.csv追加)|
+| Ver.2.2 | 2019/07/05 | ・深夜料金設定時に過去伝票の検索に失敗していたのを修正|
